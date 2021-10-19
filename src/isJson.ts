@@ -14,7 +14,8 @@ export default function isJson(str: string) {
             || type === '[object Array]'
             || type === '[object Null]'
             || type === '[object Boolean]'
-            || type === '[object Number]';
+            || type === '[object Number]'
+            || type === '[object String]';
     } catch (err) {
         return false;
     }
