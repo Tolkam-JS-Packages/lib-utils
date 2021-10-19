@@ -1,0 +1,13 @@
+# publishes a tag to the NPM registry of the current project
+stages:
+    - build
+
+publish:
+    image: node:latest
+    stage: build
+    only:
+        - tags
+    script:
+        - echo "//$CI_SERVER_HOST/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">.npmrc
+        - echo "@tolkam:registry=https://$CI_SERVER_HOST/api/v4/projects/${CI_PROJECT_ID}/packages/npm/">>.npmrc
+        - npm publish
