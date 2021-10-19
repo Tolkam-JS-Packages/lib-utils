@@ -18,4 +18,7 @@ export { default as throttle } from './src/throttle';
 // export { default as throttledQueue } from './src/throttledQueue';
 export { default as rateLimit } from './src/rateLimit';
 export { default as urlencode } from './src/urlencode';
+export { default as simpleSprintf } from './src/simpleSprintf';
+export { default as pluralIndex } from './src/pluralIndex';
+export { default as strtr } from './src/strtr';
 
