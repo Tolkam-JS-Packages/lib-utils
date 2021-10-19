@@ -8,9 +8,16 @@
 export default function range(start: number, stop: number, step = 1) {
     const a = [start];
     let b = start;
+    step = step > 0 ? step : 1;
 
     while (b < stop) {
-        a.push(b += step);
+        const next = b += step;
+
+        if(next > stop) {
+            break;
+        }
+
+        a.push(next);
     }
 
     return a;
