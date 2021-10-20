@@ -11,5 +11,8 @@
 # NPM
 **/node_modules/*
 
+# jest
+./coverage
+
 # local lock
 ./package-lock.json
