@@ -1,6 +1,5 @@
 {
     "name": "@tolkam/lib-utils",
-    "version": "1.0.0",
     "description": "Various utility functions",
     "license": "UNLICENSED",
     "devDependencies": {
