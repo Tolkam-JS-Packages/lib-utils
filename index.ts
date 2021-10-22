@@ -7,7 +7,7 @@ export { default as keep } from './src/keep';
 export { default as logger } from './src/logger';
 export { default as objectPath } from './src/objectPath';
 export { default as objectMerge } from './src/objectMerge';
-export { default as objectDeepFreeze } from './src/objectDeepFreeze';
+export { default as objectFreezeDeep, objectDeepFreeze } from './src/objectFreezeDeep';
 export { default as objectHasProperty } from './src/objectHasProperty';
 export { default as omit } from './src/omit';
 export { default as randomIntStep } from './src/randomIntStep';
