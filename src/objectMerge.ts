@@ -17,7 +17,7 @@ export default function objectMerge(target: object, source: object) {
                 }
                 objectMerge(target[key], source[key]);
             } else {
-                Object.assign(target, {[key]: source[key]});
+                target[key] = source[key];
             }
         });
     }
