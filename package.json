@@ -1,6 +1,7 @@
 {
     "name": "@tolkam/lib-utils",
     "description": "Various utility functions",
+    "version": "0.0.0",
     "license": "UNLICENSED",
     "devDependencies": {
         "@types/jest": "^27.0.2",
